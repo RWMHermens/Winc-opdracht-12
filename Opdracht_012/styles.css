@@ -1,0 +1,78 @@
+body {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+.box {
+    display: grid;
+    grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+    border: 2px solid lightgray;
+    border-radius: 8px;
+    width: 350px;
+    height: 200px;
+    margin-top: 25vh;
+    margin-right: 15px;
+}
+div p {
+    margin: 0;
+    padding-left: 15px;
+}
+.name {
+    grid-area: 1 / 1 / 1 / 10;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 13px;
+}
+.status {
+    grid-area: 2 / 1 / 2 / 8;
+    color: rgb(180, 180, 180);
+}
+.comment {
+    grid-area: 4 / 1 / 4 / 13;
+    color: rgb(97, 96, 96);
+}
+.bold {
+    font-weight: 600;
+}
+.rule {
+    border-top: 1px rgb(233, 233, 233) solid;
+    grid-area: 8 / 1 / 8 / 13
+}
+.box > img {
+    grid-area: 1 / 12 / 3 / 13;
+    width: 45px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+div[class$="button"] {
+    display: inline;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+}
+.greenbutton {
+    border: 2px solid rgb(1, 219, 1);
+    border-radius: 5px;
+    width: 156px;
+    grid-area: 10 / 1 / 10 / 7;
+    margin-left: 15px;
+    color: rgb(1, 219, 1);
+}
+.redbutton {
+    border: 2px solid rgb(238, 1, 1);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 160px;
+    grid-area: 10 / 6 / 10 / 13;
+    margin-left: 40px;
+    color: rgb(238, 1, 1);
+    background-color: white;
+}
